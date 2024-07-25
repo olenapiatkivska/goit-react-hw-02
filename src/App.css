@@ -1,0 +1,14 @@
+.sectionApp {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  text-align: center;
+  max-width: 800px;
+  border: 2px solid rgba(128, 128, 128, 0.705);
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px 6px rgba(128, 128, 128, 0.498);
+  background-color: rgba(128, 128, 128, 0.208);
+  padding: 15px;
+  margin: 0 auto;
+}

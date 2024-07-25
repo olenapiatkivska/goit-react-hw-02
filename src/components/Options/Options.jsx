@@ -1,11 +1,16 @@
+import clsx from "clsx";
+import css from "./Options.module.css";
 
-const Options = ({updateFeedback}) => {
+const Options = ({options, updateFeedback, totalFeedback, resetFeedback}) => {
     return (
-        <>
-        <button onClick={()=>updateFeedback("good")}>Good</button>
-        <button onClick={()=>updateFeedback("neutral")}>Neutral</button>
-        <button onClick={()=>updateFeedback("bad")}>Bad</button>
-        </>
+        <div className={css.sectionOptions}>
+            {options.map((option) => {
+                return (
+                    <button className={clsx(css.btnOption, css[option])} key={option} onClick={() => updateFeedback(option)}>{option}</button>
+                )
+            })}
+            { totalFeedback > 0 && (<button className={css.btnOption}  type="button" onClick={resetFeedback}>Reset</button>)}
+        </div>
     );
 };
 export default Options;

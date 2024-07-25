@@ -1,0 +1,30 @@
+.sectionOptions {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.btnOption {
+  border: 2px solid gray;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 5px 10px;
+  text-transform: capitalize;
+}
+
+.btnOption:hover,
+.btnOption:focus,
+.btnOption:active {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.405);
+}
+.good:hover {
+  background-color: rgb(166, 118, 212);
+}
+.neutral:hover {
+  background-color: rgba(99, 99, 218, 0.889);
+}
+.bad:hover {
+  background-color: rgba(211, 36, 36, 0.862);
+}
